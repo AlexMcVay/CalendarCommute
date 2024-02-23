@@ -32,6 +32,14 @@ home = 'Your home location' # TODO: Replace with actual home location
 
 # Function to calculate commute time between two locations
 # TODO: Add error handling for Google Maps API requests
+"""
+    A function to calculate the commute time between the given origin and destination using the Google Maps API.
+    Parameters:
+    - origin: the starting location
+    - destination: the destination location
+    Return:
+    - commute_time_minutes: the commute time in minutes
+    """
 def calculate_commute_time(origin, destination):
     # TODO: Handle errors from the Google Maps API request
     result = gmaps.distance_matrix(origin, destination, mode="driving", departure_time="now")
@@ -123,11 +131,3 @@ for event in events:
 
     prior_event = event
     prior_location = location
-
-# TODO: Add error handling for Google Maps API requests and Google Calendar API requests
-# TODO: Customize the behavior for specific edge cases as needed
-# TODO: Adjust the maximum number of events retrieved or modify event filtering criteria if required
-# TODO: Uncomment the line to actually create the travel event once testing is complete
-# TODO: Add notifications or reminders to notify the user about upcoming events and travel times
-# TODO: Generate a summary report of upcoming events with commute times for better planning
-# TODO: Add any additional customization or features as required
