@@ -26,7 +26,7 @@ credentials = service_account.Credentials.from_service_account_file(
 service = build('calendar', 'v3', credentials=credentials)
 
 # Set up authentication for Google Maps API
-google_maps_api_key = 'YOUR_GOOGLE_MAPS_API_KEY'  # TODO: Replace with your actual Google Maps API key
+google_maps_api_key = YOUR_GOOGLE_MAPS_API_KEY  # TODO: Replace with your actual Google Maps API key
 gmaps = googlemaps.Client(key=google_maps_api_key)
 home = 'Your home location' # TODO: Replace with actual home location
 
